@@ -1,8 +1,11 @@
 import { useLoaderData } from "react-router-dom";
 import Coffees from "../components/Coffees";
-import { useState } from "react";
+import { useContext, useState } from "react";
+import { AuthContext } from "../components/AuthProvider";
 
 const Root = () => {
+    const user = useContext(AuthContext)
+    console.log(user);
     const loadCoffees = useLoaderData()
     const [coffees, setCoffees] = useState(loadCoffees)
     console.log(coffees);
