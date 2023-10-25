@@ -10,7 +10,7 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <Root></Root>,
-    loader: () => fetch("https://coffee-store-server-gd37n0gcu-suhans-projects.vercel.app/coffees"),
+    // loader: () => fetch("https://coffee-store-server-gd37n0gcu-suhans-projects.vercel.app/coffees"),
   },
 
   {
